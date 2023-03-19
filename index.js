@@ -64,8 +64,8 @@ function calculateNetSalary(){
   const grossSalary = basicSalary + benefits;
   const netSalary = grossSalary - payee - nhif - nssf;
   
-  document.getElementById("net-salary").innerHTML = `Gross Salary: ${grossSalary},payee: ${payee},NHIF Deductions ${nhif},
-  NSSF Deduction: ${nssf}, Net Salary: ${netSalary}`;
+  document.getElementById("net-salary").innerHTML = `Gross Salary: ${grossSalary} <br>payee: ${payee}<br>NHIF Deductions ${nhif}<br>
+  NSSF Deduction: ${nssf}<br> Net Salary: ${netSalary}`;
 }  
 
 
