@@ -49,8 +49,9 @@ function calculateDemeritPoints(){
   document.getElementById("result").innerHTML = speedMessage;
 
 }
-//
-//  net pay salary 
+calculateGrade();
+
+// function for net pay salary 
 
 function calculateNetSalary(){
   const basicSalary = parseInt(document.getElementById("basic-salary").value);
@@ -67,5 +68,5 @@ function calculateNetSalary(){
   document.getElementById("net-salary").innerHTML = `Gross Salary: ${grossSalary} <br>payee: ${payee}<br>NHIF Deductions ${nhif}<br>
   NSSF Deduction: ${nssf}<br> Net Salary: ${netSalary}`;
 }  
-
+calculateNetSalary();
 
