@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Moringa First Project</title>
+</head>
+<body>
+    <!--  Created three divs with a heading -->
+    <h1>Moringa First Project</h1>
+    <div class="container">
+        <div id="forGradeCalculator" class="divs">
+            <h1>Student Grade Calculator</h1>
+           
+                <label for="marks">Enter Student Marks:</label>
+                <input type="number" id="marks" name="marks" min="0" max="100">
+                <button onclick="calculateGrade()">Calculate Grade</button>
+           
+            <p id="results"></p>
+
+        </div>
+        <div id="forSpeedDetector" class="divs">
+            <h1>Speed Detector</h1>
+            <label for="speedInput"> Enter speed in km/h:</label>
+            <input type="number" id="speedInput">
+            <button type="button" onclick="calculateDemeritPoints()"> Calculate</button>
+            <p id="result"></p>
+        </div>
+
+        <div id="forNetSalary" class="divs">
+            <h1>Net Salary Calculator</h1>
+            <label for="basic-salary">Basic Salary:</label>
+            <input type="number" id="basic-salary" required>
+            <label for="benefits">Benefits:</label>
+            <input type="number" id="benefits" required>
+    
+            <button onclick="calculateNetSalary()">Calculate Net Salary</button>
+            <p ><span id="net-salary"></span></p>
+        </div>
+    </div>
+   
+    <script type="text/javascript"  src="./index.js"></script>
+</body>
+</html>
